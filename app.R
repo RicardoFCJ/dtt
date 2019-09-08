@@ -2,7 +2,7 @@ library(data.table);library(shiny);library(shinydashboard);library(magrittr)
 #DTT
 pathdados="/var/www/dados-dtt.csv"
 #pathdados="dados-dtt.csv"
-if(!file.exists(path)){
+if(!file.exists(pathdados)){
   dados=data.table(matrix(ncol = 190,nrow = 0))
   colnames(dados)=c("Participante", "Condicao", "Tarefa", "Analista", "tar1", "tar2", 
                     "tar3", "tar4", "tar5", "tar6.1", "tar6.2", "tar6.3", "tar6.4", 
