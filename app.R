@@ -36,7 +36,7 @@ if(!file.exists(pathdados)){
                     "tar19.11", "tar19.12", "tar20.1", "tar20.2", "tar20.3", "tar20.4", 
                     "tar20.5", "tar20.6", "tar20.7", "tar20.8", "tar20.9", "tar20.10", 
                     "tar20.11", "tar20.12", "tar21")
-  fwrite(dados,path)
+  fwrite(dados,pathdados)
 }else{
   dados=fread(pathdados)
 }
